@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="icon" href="https://fav.farm/🔌" />
+    <title>React Web Component</title>
+    <script defer src="webcomponent.js"></script></head>
+    <style>
+      html, body {
+        padding: 0;
+        margin: 0;
+      }
+      header, main {
+        padding: 15px;
+      }
+      header {
+        background: blanchedalmond;
+      }
+      section {
+        margin: 0 0 15px;
+      }
+
+      div.code {
+        padding: 10px;
+        background: #eee;
+        margin: 10px 0;
+      }
+    </style>
+  <body>
+    <header>
+      <h1>React Web Component Example</h1>
+      <h2>Creating a web component with React.js</h2>
+    </header>
+    <main>
+      <section>
+        Below is a webcomponent. If you inspect the html, you'll see it's tag as
+        <code>
+          &lt;web-component&gt; 
+        </code>        
+      </section>
+      <section>
+        <web-component></web-component>
+      </section>
+      <section>
+        You can include this component in your own HTML by loading this script in your
+        <code>
+          &lt;head&gt; 
+        </code>
+        tag
+        <div class="code">
+          <code>
+            &lt;script src=&quot;<span class="url"></span>&quot;&gt;&lt;/script&gt;
+          </code>
+        </div>
+        Then place this custom HTML tag in you markup
+        <div class="code">
+          <code>
+            &lt;head&gt; 
+          </code> 
+        </div>
+        For Example
+        <div class="code">
+          <code>
+<pre>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;script src=&quot;<span class="url"></span>&quot;&gt;&lt;/script&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;web-component&gt;&lt;/web-component&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</pre></code>
+        </div>
+      </section>
+    </main>
+    <script>
+      const spans = document.querySelectorAll('.url');
+      const url = location.origin + '/webcomponent.js';
+      Array.from(spans).forEach(span => {
+        span.innerText = url;
+      })
+    </script>
+  </body>
+</html>
