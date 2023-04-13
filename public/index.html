@@ -9,20 +9,35 @@
         padding: 0;
         margin: 0;
       }
-      header, main {
+      body {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100vh;
+      }
+      main {
+        flex: 1;
+      }
+      header, main, footer {
         padding: 15px;
       }
-      header {
-        background: blanchedalmond;
+      header, footer {
+        background: #17191e;
+        color: #ffffff;
       }
       section {
         margin: 0 0 15px;
       }
-
       div.code {
         padding: 10px;
         background: #eee;
         margin: 10px 0;
+      }
+      a {
+        color: #f8d95e;
+      }
+      a:hover {
+        color: #fbe9a0;
       }
     </style>
   <body>
@@ -32,7 +47,7 @@
     </header>
     <main>
       <section>
-        Below is a webcomponent. If you inspect the html, you'll see it's tag as
+        Below is a web component. If you inspect the html on this page, you'll see its tag as
         <code>
           &lt;web-component&gt; 
         </code>        
@@ -71,10 +86,10 @@
 &lt;/html&gt;</pre></code>
         </div>
       </section>
-      <section>
-        View the source code at <a href="https://github.com/Sirrine-Jonathan/react-web-component">https://github.com/Sirrine-Jonathan/react-web-component</a>
-      </section>
     </main>
+    <footer>
+      View the source code at <a href="https://github.com/Sirrine-Jonathan/react-web-component">https://github.com/Sirrine-Jonathan/react-web-component</a>
+    </footer>
     <script>
       const spans = document.querySelectorAll('.url');
       const url = location.origin + '/webcomponent.js';
