@@ -3,7 +3,6 @@
   <head>
     <link rel="icon" href="https://fav.farm/🔌" />
     <title>React Web Component</title>
-    <script defer src="webcomponent.js"></script></head>
     <style>
       html, body {
         padding: 0;
@@ -40,6 +39,7 @@
         color: #fbe9a0;
       }
     </style>
+  </head>
   <body>
     <header>
       <h1>React Web Component Example</h1>
@@ -53,7 +53,7 @@
         </code>        
       </section>
       <section>
-        <web-component></web-component>
+        <web-component name="Jonathan"></web-component>
       </section>
       <section>
         You can include this component in your own HTML by loading this script in your
@@ -66,13 +66,13 @@
             &lt;script src=&quot;<span class="url"></span>&quot;&gt;&lt;/script&gt;
           </code>
         </div>
-        Then place this custom HTML tag in you markup
+        Then place this custom HTML tag in your markup like:
         <div class="code">
           <code>
-            &lt;head&gt; 
+            &lt;web-component&gt;&lt;/web-component&gt;
           </code> 
         </div>
-        For Example
+        For Example:
         <div class="code">
           <code>
 <pre>&lt;!DOCTYPE html&gt;
@@ -90,7 +90,7 @@
     <footer>
       View the source code at <a href="https://github.com/Sirrine-Jonathan/react-web-component">https://github.com/Sirrine-Jonathan/react-web-component</a>
     </footer>
-    <script>
+    <script type="application/javascript">
       const spans = document.querySelectorAll('.url');
       const url = location.origin + '/webcomponent.js';
       Array.from(spans).forEach(span => {

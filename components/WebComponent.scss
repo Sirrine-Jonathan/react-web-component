@@ -1,10 +1,14 @@
 #web-component {
-    h1 {
-        margin: 0;
-    }
     background: #17191e;
     color: #ffffff;
     padding: 10px 16px;
     border-radius: 10px;
-    width: max-content;
+
+    h1 {
+        margin: 0;
+    }
+
+    input {
+        margin-top: 10px;
+    }
 }
