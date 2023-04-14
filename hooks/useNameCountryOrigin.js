@@ -18,7 +18,6 @@ const useNameCountryOrigin = (fullname) => {
             first,
             last,
           }),
-          mode: "no-cors",
         }
       )
         .then((response) => response.json())

@@ -32,7 +32,6 @@ const WebComponent = ({ first: propFirst, last: propLast }) => {
       : null;
   }
 
-  console.log("rerender");
   return (
     <div id="web-component">
       <h2>Enter your name to find your name's country of origin.</h2>
